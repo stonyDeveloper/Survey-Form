@@ -1,0 +1,122 @@
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital@1&display=swap" rel="stylesheet">
+<style>
+  body{background: linear-gradient(rgb(207, 146, 81), rgb(199, 194, 194))
+  }
+
+  #title{font-family:lato;
+  color:white;
+  text-align: center;
+  font-size: 40px;}
+  #description{font-family: lato;
+  color: antiquewhite;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 40px;}
+  .hero{font-family:lato ;
+  font-size: 17px ;
+  width: fit-content;
+  background-color: rgb(90, 82, 82);
+  margin: auto;
+  padding: 15px 20px 15px 20px;
+  color:white;
+  border-radius: 2%;}
+  #name{width: 90%;
+  height:30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(207, 146, 81);
+  border-radius: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  }
+  #email{width: 90%;
+  height:30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(207, 146, 81);
+  border-radius: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;}
+  #number{width: 90%;
+  height:30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(207, 146, 81);
+  border-radius: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;}
+  #dropdown{width: 90%;
+  height:30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(207, 146, 81);
+  border-radius: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px}
+  #comments{width: 90%;
+  height:auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(207, 146, 81);
+  border-radius: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;}
+  #submit{width: 90%;
+  height:auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  background-color: #37AF65;
+  color: aliceblue;
+  font-size: 20px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 100px;}
+</style>
+</style>
+<!DOCTYPE html>
+<html>
+    <h1 id="title">The Poetry Club Survey Form</h1>
+    <p id="description">We're ecstatic to have you join our community!!!</p><br/>
+    <form id="survey-form">
+      <div class="hero">
+       <label id="name-label" for="name">Name<br/><br/>
+        <input id="name" type="text" placeholder="Enter your Name" required></label><br/><br/>
+       <label id="email-label" for="email"> Email<br/><br/>
+          <input id="email" type="email" placeholder="Enter your Email" required></label><br/><br/>
+        <label id="number-label" for="number">Age(optional)<br/><br/>
+        <input id="number" type="number" min="10" max="100" placeholder="Age" required></label><br/><br/>
+          Which option best describes your poetry?<br><br/>
+          <select id="dropdown" name="description">
+            <option value="">Select your option</option>
+            <option value="free-verse">Free Verse</option>
+            <option value="blank-verse">Blank Verse</option>
+            <option value="rhymed-poetry">Rhymed Poetry</option>
+            <option value="narrative-poetry">Narrative Poetry</option>
+            <option value="epics">Epics</option>
+            <option value="sonnet">Sonnet</option>
+            <option value="elegy">Elegy</option>
+            <option value="ode">Ode</option>
+          </select><br/><br/>
+          Would you recommend The Poetry Club to a friend?<br/><br/>
+         <label for="definitely"><input type="radio" name="definitely-maybe-notsure" id="definitely" value="definitely">Definitely</label><br/>
+      <label for="maybe"><input id="maybe" type="radio" name="definitely-maybe-notsure" value="maybe">Maybe</label><br/>
+      <label for="not-sure"><input type="radio" id="not-sure" name="definitely-maybe-notsure" value="not-sure">Not Sure</label><br/><br/>
+      What would you like to see improved?<br/><br/>
+      <label for="poetry-volume"><input type="checkbox" name="poetry-volume" value="poetry-volume">Poetry Volume</label><br/>
+      <label for="web-design"><input type="checkbox" name="web-design" value="web-design">Web Design</label><br/>
+      <label for="newsletter"><input type="checkbox" name="newsletter" value="newsletter">Newsletter</label><br/>
+      <label for="Ccompetitions"><input type="checkbox" name="competition" value="competition">Competition</label><br/>
+      <label for="guestposts"><input type="checkbox" name="guestposts" value="guestposts">Guestposts</label><br/>
+      <label for="meetups"><input type="checkbox" name="meetups" value="meetups">Meetups</label><br/>
+      <label for="courses"><input type="checkbox" name="courses" value="courses">Courses</label><br/><br/>
+        Do you have any suggestions on  how we can improve The Poetry Club community?<br/><br/>
+      <textarea id="comments" rows="5" cols="33" placeholder="Enter comments here...."></textarea><br/><br/>
+      <button type="submit" id="submit">Submit</button>
+      
+    </form>
+  </div>
+</html>
+          
+          
